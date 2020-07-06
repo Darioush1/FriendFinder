@@ -1,0 +1,81 @@
+    <header>
+            <div class='title'>Pet Survey</div>
+        </header>
+        <hr>
+        <Form action='/upload' class='Survey'>
+            <span class='questionNum'>Name</span>
+            <input type='text' class='userInput' id='userName' placeholder='place your name here'>
+            <br>
+            <form action='/upload' class='questionNum' id="photoUp" method='POST'>Photo <input class='userInput' id='userPhoto' type='file' name='userPhoto' enctype='multipart/form-data'></span>
+
+            <br>
+            <hr>
+            <div class='question'>
+                <span class='questionText'>Watching sports is <span class='slidingScale' id='wordq1'>fun</span> for you.</span>
+                <br>
+                <input for='q1' type="range" min="1" max="100" value="50" class="slider" id="q1">
+                <br>
+                <output for='q1' id="volume"></output>
+            </div>
+            <div class='question'>
+                <span class='questionText'>Playing sports is really <span id='wordq2'> fun</span> for you.</span>
+                <br>
+                <input for='q2' type="range" min="1" max="100" value="50" class="slider" id="q2">
+                <br>
+            </div>
+            <div class='question'>
+                <span class='questionText'>Tea is better than coffee.</span>
+                <br>
+                <input for='q1' type="range" min="1" max="100" value="50" class="slider" id="q2">
+                <br>
+            </div>
+            <div class='question'>
+                <span class='questionText'>Irish coffee is better than coffee.</span>
+            <br>
+                <input for='q1' type="range" min="1" max="100" value="50" class="slider" id="q3">
+                <br>
+            </div>
+            <div class='question'>
+                <span class='questionText'>Dragons are cool.</span>
+            <br>
+                <input for='q1' type="range" min="1" max="100" value="50" class="slider" id="q4">
+                <br>
+            </div>
+            <div class='question'>
+                <span class='questionText'>You have a defined philosophical structure.</span>
+                <br>
+                <input for='q1' type="range" min="1" max="100" value="50" class="slider" id="q5">
+                <br>
+            </div>
+            <div class='question'>
+                <span class='questionText'>You are allergic to peanuts</span>
+                <br>
+                <input for='q1' type="range" min="1" max="100" value="50" class="slider" id="q6">
+                <br>
+            </div>
+            <div class='question'>
+                <span class='questionText'>Jazz.</span>
+            <br>
+                <input for='q1' type="range" min="1" max="100" value="50" class="slider" id="q7">
+                <br>
+            </div>
+            <div class='question'>
+                <span class='questionText'>Dogs are better than cats.</span>
+                <br>
+                <input for='q1' type="range" min="1" max="100" value="50" class="slider" id="q8">
+                <br>
+            </div>
+            <div class='question'>
+                <span class='questionText'>You like the number 5 more than the number 1.</span>
+                <br>
+                <input for='q1' type="range" min="1" max="100" value="50" class="slider" id="q9">
+                <br>
+                <br>
+            </div>
+            <button type='submit' id='submit'>Submit</button>
+
+
+
+
+        </div>
+    </body>
