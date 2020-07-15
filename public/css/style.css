@@ -139,6 +139,12 @@ button {
     padding: .5rem 1rem;
     z-index: 1;
 }
+button#submit{
+    background-color:  rgba(179, 48, 48, 0.918);
+    margin-left: auto;
+    justify-content: center;
+    margin-right: auto;
+}
 
 .question{
     background-color: white;
@@ -195,3 +201,4 @@ button {
     background: #e27d60;
     cursor: pointer;
   }
+

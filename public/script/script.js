@@ -68,43 +68,43 @@ var wordChangeSet2 = function () {
 
 };
 
-var jazzChange = function () {
-    var q = '#word' + question;
-    if (perf <= 10) {
-        $(q).css({"color": "red",'font-family': 'Rambla, san-serif', 'font': '3rem bold italic', 'transition': 'width 2s',
-        'transition-timing-function': 'linear'})
-        console.log('hell')
-    } else if (10 < perf && perf <= 20) {
-        $(q).css({"color": "red",'font-family': 'Rambla, san-serif', 'font': '2rem bold italic', 'transition': 'width 2s',
-        'transition-timing-function': 'linear'})
-        console.log('worst')
-    } else if (20 < perf && perf <= 30) {
-        $(q).css({"color": "red",'font-family': "Rambla, san-serif", 'font': '1.5rem', 'transition': 'width 2s',
-        'transition-timing-function': 'linear'})
-        console.log('vile')
-    } else if (30 < perf && perf <= 40) {
-        $(q).css({"color": "red",'font-family': "Rambla, san-serif", 'font': '1.5rem, #C38D9E'})
-        console.log('fine')
-    } else if (40 < perf && perf <= 50) {
-        $(q).css({"color": "#C38D9E",'font-family': "Rambla, san-serif", 'font': '1.5rem, #C38D9E'})
-        console.log('okay')
-    } else if (50 < perf && perf <= 60) {
-        $(q).css({"color": "#C38D9E",'font-family': "Rambla, san-serif", 'font': '1.5rem, #C38D9E'})
-        console.log('okay')
-    } else if (60 < perf && perf <= 70) {
-        $(q).css({"color": "#C38D9E",'font-family': "Rambla, san-serif", 'font': '1.5rem, #C38D9E'})
-        console.log('fun')
-    } else if (70 < perf && perf <= 80) {
-        $(q).css({"color": "#C38D9E",'font-family': "Rambla, san-serif", 'font': '1.5rem, #C38D9E'})
-        console.log('fun')
-    } else if (80 < perf && perf <= 90) {
-        $(q).css({"color": "#C38D9E",'font-family': "Rambla, san-serif", 'font': '1.5rem, #C38D9E'})
-        console.log('awesome')
-    } else {
-        $(q).css({"color": "#C38D9E",'font-family': "Rambla, san-serif", 'font': '1.5rem, #C38D9E'})
-    }
+// var jazzChange = function () {
+//     var q = '#word' + question;
+//     if (perf <= 10) {
+//         $(q).css({"color": "red",'font-family': 'Rambla, san-serif', 'font': '3rem bold italic', 'transition': 'width 2s',
+//         'text-shadow': '2px 2px #ff0000', 'transition-timing-function': 'linear'})
+//         console.log('hell')
+//     } else if (10 < perf && perf <= 20) {
+//         $(q).css({"color": "red",'font-family': 'Rambla, san-serif', 'font': '2rem bold italic', 'transition': 'width 2s',
+//         'transition-timing-function': 'linear','text-shadow': '0px 0px #ff0000'})
+//         console.log('worst')
+//     } else if (20 < perf && perf <= 30) {
+//         $(q).css({"color": "red",'font-family': "Rambla, san-serif", 'font': '1.5rem', 'transition': 'width 2s',
+//         'transition-timing-function': 'linear', 'text-shadow': '0px 0px #ff0000'})
+//         console.log('vile')
+//     } else if (30 < perf && perf <= 40) {
+//         $(q).css({"color": "red",'font-family': "Rambla, san-serif", 'font': '1rem, #C38D9E', 'text-shadow': '0px 0px #ff0000'})
+//         console.log('fine')
+//     } else if (40 < perf && perf <= 50) {
+//         $(q).css({"color": "#C38D9E",'font-family': "Rambla, san-serif", 'font': '1.5rem, #C38D9E', 'text-shadow': '0px 0px #ff0000'})
+//         console.log('okay')
+//     } else if (50 < perf && perf <= 60) {
+//         $(q).css({"color": "#C38D9E",'font-family': "Rambla, san-serif", 'font': '1.5rem, #C38D9E', 'text-shadow': '0px 0px #ff0000'})
+//         console.log('okay')
+//     } else if (60 < perf && perf <= 70) {
+//         $(q).css({"color": "#C38D9E",'font-family': "Rambla, san-serif", 'font': '1.5rem, #C38D9E', 'text-shadow': '0px 0px #ff0000'})
+//         console.log('fun')
+//     } else if (70 < perf && perf <= 80) {
+//         $(q).css({"color": "#C38D9E",'font-family': "Rambla, san-serif", 'font': '1.5rem, #C38D9E', 'text-shadow': '0px 0px #ff0000'})
+//         console.log('fun')
+//     } else if (80 < perf && perf <= 90) {
+//         $(q).css({"color": "#C38D9E",'font-family': "Rambla, san-serif", 'font': '2rem, #C38D9E', 'text-shadow': '0px 0px #ff0000'})
+//         console.log('awesome')
+//     } else {
+//         $(q).css({"color": "#C38D9E",'font-family': "Rambla, san-serif", 'font': '3rem, #C38D9E','text-shadow': '2px 2px #gold'})
+//     }
 
-};
+// };
 
 
 $('.base').on('click', function () {
@@ -200,5 +200,11 @@ $('#q7').on('change', function () {
 $('#q8').on('change', function () {
     question = $(this).attr('id');
     perf = $(this).val();
-    jazzChange(perf)
+    wordChange(perf)
+});
+
+$('#q9').on('change', function () {
+    question = $(this).attr('id');
+    perf = $(this).val();
+    wordChangeSet2(perf)
 });
